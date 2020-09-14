@@ -1,0 +1,22 @@
+server:
+  port: 8082  #  启动端口,命令行可以注入
+spring:
+  application:
+    name: hs-service1
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848 # 配置中心的地址
+        file-extension: yaml        # dataid 的名称就是application的name加上file-extension service1.yaml
+        namespace: 61a984f0-4cf0-4e5c-94cf-cedb7962eaaa
+        group: HS_API_GROUP
+        ext-config[0]:
+          data-id: datasource.yaml
+          group: HS_API_GROUP
+        ext-config[1]:
+          data-id: ext-config-common02.properties
+          group: GLOBAL_GROUP
+        ext-config[2]:
+          data-id: ext-config-common03.properties
+          group: REFRESH_GROUP
+          refresh: true # 动态刷新配置
