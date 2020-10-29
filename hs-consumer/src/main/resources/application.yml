@@ -9,7 +9,7 @@ spring:
   cloud:
     nacos:
       discovery:
-        enabled: false # ´¿Ïû·ÑÕß,²»±©Â¶·şÎñ
+        enabled: false # çº¯æ¶ˆè´¹è€…,ä¸æš´éœ²æœåŠ¡
         server-addr: 127.0.0.1:8848
         namespace: 61a984f0-4cf0-4e5c-94cf-cedb7962eaaa
         cluster-name: DEFAULT

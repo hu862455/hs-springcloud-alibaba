@@ -18,6 +18,7 @@
         <module>hs-service2</module>
         <module>hs-consumer</module>
         <module>hs-provider</module>
+        <module>hs-gateway</module>
     </modules>
 
     <parent>

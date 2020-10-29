@@ -2,7 +2,7 @@ server:
   port: 8081  #  启动端口,命令行可以注入
 spring:
   application:
-    name: hs-service1
+    name: hs-service
   cloud:
     nacos:
       config:
@@ -19,3 +19,6 @@ spring:
         extension-configs[1]:
           data-id: global.yaml
           group: GLOBAL_GROUP
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 61a984f0-4cf0-4e5c-94cf-cedb7962eaaa

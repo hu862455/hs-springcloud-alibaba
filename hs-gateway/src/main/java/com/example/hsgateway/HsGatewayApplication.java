@@ -1,4 +1,4 @@
-package org.example.hsservice1;
+package com.example.hsgateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class HsService1Application {
+public class HsGatewayApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HsService1Application.class, args);
+		SpringApplication.run(HsGatewayApplication.class, args);
 	}
 
 }

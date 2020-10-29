@@ -1,6 +1,6 @@
 
 server:
-  port: ${port:9000} # 默认端口9000 可以根据启动vm参数变更端口号
+  port: ${port:9000} # 鏈寚瀹氱鍙ｅ垯榛樿9000
 
 
 spring:
@@ -10,6 +10,7 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+        namespace: 61a984f0-4cf0-4e5c-94cf-cedb7962eaaa
 logging:
   level:
     root: info

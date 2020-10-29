@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hs-config" />
+        <module name="hs-gateway" />
         <module name="hs-provider" />
         <module name="hs-service2" />
         <module name="hs-service1" />
@@ -18,6 +19,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="hs-config" options="-parameters" />
       <module name="hs-consumer" options="-parameters" />
+      <module name="hs-gateway" options="-parameters" />
       <module name="hs-provider" options="-parameters" />
       <module name="hs-service1" options="-parameters" />
       <module name="hs-service2" options="-parameters" />

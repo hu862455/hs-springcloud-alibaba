@@ -2,7 +2,7 @@ server:
   port: 8082  #  启动端口,命令行可以注入
 spring:
   application:
-    name: hs-service1
+    name: hs-service
   cloud:
     nacos:
       config:
@@ -20,3 +20,6 @@ spring:
           data-id: ext-config-common03.properties
           group: REFRESH_GROUP
           refresh: true # 动态刷新配置
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 61a984f0-4cf0-4e5c-94cf-cedb7962eaaa
