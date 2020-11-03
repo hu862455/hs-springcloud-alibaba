@@ -2,7 +2,7 @@ server:
   port: 9102
 spring:
   application:
-    name: gateway
+    name: hs-gateway
   main:
     allow-bean-definition-overriding: true
   cloud:
@@ -11,6 +11,7 @@ spring:
         server-addr: localhost:8848
         #此处的namespace是discovery服务对应的命名空间，与config不同
         #namespace: b7d26021-28b5-42d1-b36d-737a818a2146
+        namespace: 61a984f0-4cf0-4e5c-94cf-cedb7962eaaa
       config:
         enabled: true # 确定是否使用配置中心的配置
         server-addr: 127.0.0.1:8848 # 配置中心的地址

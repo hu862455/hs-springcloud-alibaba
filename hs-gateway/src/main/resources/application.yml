@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8858
+      datasource:
+        - nacos:
+            server-addr: localhost:8848 # nacos 地址
+            data-id: ${spring.application.name}-sentinel # 使用通配符,不同应用对应不同的sentinel配置文件
+            group-id: HS_API_GROUP # 指定group
+            namespace: 61a984f0-4cf0-4e5c-94cf-cedb7962eaaa # 指定命名空间
+            data-type: json # 指定配置文件数据类型
+            rule-type: flow
